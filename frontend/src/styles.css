@@ -1,0 +1,26 @@
+body { margin: 0; font-family: Inter, Roboto, 'Helvetica Neue', Arial; }
+#root { padding-top: 64px; }
+/* small visual polish */
+.MuiPaper-root { background: #ffffff; }
+
+/* Message bubble styles */
+.msg-bubble {
+  max-width: 70%;
+  padding: 10px 12px;
+  border-radius: 16px;
+  display: inline-block;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+.msg-bubble.mine {
+  background: linear-gradient(135deg,#dcf8c6,#c9f0b8);
+  color: #000;
+  border-bottom-right-radius: 4px;
+}
+.msg-bubble.theirs {
+  background: #ffffff;
+  color: #000;
+  border-bottom-left-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.msg-content { white-space: pre-wrap; }
+.msg-meta { font-size: 11px; color: rgba(0,0,0,0.45); margin-top: 6px; text-align: right; }
